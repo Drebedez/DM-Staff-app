@@ -1,0 +1,24 @@
+{
+    "prefix": {
+        "name": "dice",
+        "description": "Haz un dado 1d20 o varios de el tipo que quieras.",
+        "permission": "Admin"
+    },
+    "command": {
+        "name": "dice",
+        "description": "Haz un dado 1d20 o varios de el tipo que quieras.",
+        "options": {
+            "throws": {
+                "name": "throws",
+                "description": "Cantidad de tiradas.",
+                "minValue": 0
+            },
+            "value": {
+                "name": "value",
+                "description": "Valor de el dado.",
+                "minValue": 0
+            }
+        }
+    },
+    "limitChartMessage":"El mensaje que se quiere enviar supera los limites de discord."
+}

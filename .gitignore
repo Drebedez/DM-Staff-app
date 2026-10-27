@@ -1,0 +1,4 @@
+#Evitar subir base de datos json.
+data/json/
+#Evitar subir base de datos sqlite.
+data/sqlite/
