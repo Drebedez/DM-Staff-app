@@ -1,4 +1,4 @@
 #Evitar subir base de datos json.
-data/json/
+data/json/*.json
 #Evitar subir base de datos sqlite.
-data/sqlite/
+data/sqlite/*.db
