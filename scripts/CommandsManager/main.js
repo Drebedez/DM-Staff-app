@@ -1,5 +1,5 @@
 import { appClient } from '../ClientDiscordInstance/main.js';
-import { Collection, Routes, REST, Events, Client } from 'discord.js';
+import { Collection, Routes, REST, Events } from 'discord.js';
 import { Prefix } from '../../AppLibs/Prefix/main.js';
 import fs from 'node:fs';
 import path from "node:path";
@@ -11,20 +11,20 @@ const Commands = new Collection();
 //Obtener ruta de archivo donde se encuentran los comandos.
 const CommandsDir = path.join(import.meta.filename, '../../../commands');
 
+const files = fs.readdirSync(CommandsDir);
+
+for(const commandfile of files){
+    const command = (await import(`../../commands/${commandfile}/main.js`))?.slashCommand;
+    if(command.data)
+        Commands.set(command.data.name, command);
+}
+
 //Instanciar 'REST'.
 const appREST = new REST().setToken(APP_ID_DATA.TOKEN);
 
 
 //Integrar comandos a los servidores
 (async () => {
-
-    const files = fs.readdirSync(CommandsDir);
-
-    for(const commandfile of files){
-        const command = await import(`../../commands/${commandfile}/main.js`);
-        if(command.data)
-            Commands.set(command.data.name, command);
-    }
 
     try{
         await appREST.put(

@@ -51,7 +51,7 @@ Prefix.add(prefix =>
 
         }
 
-        discordMessage.reply(command(value, throws));
+        discordMessage.reply(command(value, throws)).catch(()=>{});;
 
     })
 );
@@ -79,7 +79,7 @@ const slashCommand = {
                 interaction.options.getNumber(ScriptConfig.command.options.value.name) || undefined,
                 interaction.options.getNumber(ScriptConfig.command.options.throws.name) || undefined
             )
-        )
+        ).catch(()=>{});
     }
 }
 
