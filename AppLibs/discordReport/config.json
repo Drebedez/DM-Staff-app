@@ -1,0 +1,34 @@
+{
+    "Representations":{
+        "emoji":"⚠️",
+        "embedColor":{
+            "warn":"#ff4133",
+            "log":"#3352ff"
+        }
+    },
+    "ButtonReportID":"buttonReportSystem",
+    "FormReportSystemID":"reportFormSystem",
+    "Error":{
+        "NOT_GETTED_STRING":"No se obtuvo una cadena de texto.",
+        "CLIENT_SETED":"El manejador de eventos ya fue declarado.",
+        "NOT_INSTANCED_CLIENT":"No se recibio un cliente instanciado.",
+        "NOT_GETTED_FUNCTION": "No se obtuvo una funcion."
+    },
+    "reportForm":{
+        "title":"Report",
+        "id":"reportSystemForm",
+        "inputTitle":{
+            "label":"",
+            "description":"",
+            "id":"",
+            "placeholder":""
+        },
+        "inputReportType":{
+        },
+        "menuStringOption":{
+            "minCharts":1,
+            "maxCharts":100
+
+        }
+    }
+}
