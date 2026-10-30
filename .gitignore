@@ -1,4 +1,7 @@
 #Evitar subir base de datos json.
-data/json/*.json
+data/json/*
 #Evitar subir base de datos sqlite.
-data/sqlite/*.db
+data/sqlite/*
+# Excepciones.
+!data/json/.gitkeep
+!data/sqlite/.gitkeep
