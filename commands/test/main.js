@@ -1,9 +1,10 @@
-import {Prefix} from '../../AppLibs/Prefix/main.js';
+import {Prefix} from '../../scripts/prefixHandler/main.js';
 import { SlashCommandBuilder, ActionRowBuilder } from 'discord.js';
-import { discordReport } from '../../AppLibs/discordReport/main.js';
+import { Report, reportForm } from '../../AppLibs/Report/main.js';
+
 
 const command = () => {
-    const Row = new ActionRowBuilder().addComponents(discordReport.getButton('Prueba'));
+    const Row = new ActionRowBuilder().addComponents(Report.getButton('Prueba'));
     return {components:[Row]}
 }
 

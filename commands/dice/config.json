@@ -2,23 +2,26 @@
     "prefix": {
         "name": "dice",
         "description": "Haz un dado 1d20 o varios de el tipo que quieras.",
-        "permission": "Admin"
+        "permission": "User"
     },
     "command": {
         "name": "dice",
-        "description": "Haz un dado 1d20 o varios de el tipo que quieras.",
+        "description": "Make a 1d20 die or several of any value you want.",
         "options": {
             "throws": {
                 "name": "throws",
-                "description": "Cantidad de tiradas.",
+                "description": "Number of throws.",
                 "minValue": 0
             },
             "value": {
                 "name": "value",
-                "description": "Valor de el dado.",
+                "description": "Maximum result of the die.",
                 "minValue": 0
             }
         }
     },
-    "limitChartMessage":"El mensaje que se quiere enviar supera los limites de discord."
+    "TextsLocationsID":{
+        "RESULT":"throw_result"
+    },
+    "limitChartMessage":"Error: The message exceeds Discord's limits, try reducing the results."
 }

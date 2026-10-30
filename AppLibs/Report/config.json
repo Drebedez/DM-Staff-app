@@ -1,0 +1,46 @@
+{
+    "Representations": {
+        "emoji": "⚠️",
+        "embedColor": {
+            "warn": "#ff4133",
+            "log": "#3352ff"
+        }
+    },
+    "ButtonReportID": "buttonReportSystem",
+    "FormReportSystemID": "reportFormSystem",
+    "Error": {
+        "NOT_GETTED_STRING": "No se obtuvo una cadena de texto.",
+        "CLIENT_SETED": "El manejador de eventos ya fue declarado.",
+        "NOT_INSTANCED_CLIENT": "No se recibio un cliente instanciado.",
+        "NOT_GETTED_FUNCTION": "No se obtuvo una funcion.",
+        "MAX_CHAR_LENGTH": "La cantidad de caracteres es superior a la maxima.",
+        "MIN_CHAR_LENGTH": "La cantidad de caracteres es inferior a la minima."
+    },
+    "reportForm": {
+        "title": "Report",
+        "id": "reportSystemForm",
+        "inputTitle": {
+            "label": "Title:",
+            "id": "title",
+            "placeholder": "Short description of the problem."
+        },
+        "menuStringOption": {
+            "label": "Category:",
+            "id": "reportType",
+            "placeholder": "Choose a category.",
+            "minCharts": 1,
+            "maxCharts": 100
+        },
+        "inputForm": {
+            "label": "Form:",
+            "id": "inputForm",
+            "placeholder": "Describe your problem."
+        },
+        "fileUpload": {
+            "label":"Files:",
+            "description":"(Optional): Upload files that help to understand and/or solve the problem.",
+            "id": "reportFiles",
+            "maxFiles": 10
+        }
+    }
+}
