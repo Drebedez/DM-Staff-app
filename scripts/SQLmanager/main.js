@@ -8,8 +8,9 @@ const db = {}
 const dbDir = path.join(import.meta.filename, ScriptConfig.dbSQLdir);
 
 fs.readdirSync(dbDir).forEach(x=>{
-    console.log(x);
-    db[path.extname(x)] = new Database(`${dbDir}/${x}`)
-})
+    if(path.extname(x) == '.db'){
+        db[path.parse(x).name] = new Database(`${dbDir}/${x}`);
+    }
+});
 
 export {db}
