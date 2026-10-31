@@ -1,3 +1,4 @@
 {
-    "dbSQLdir":"../../../data/sqlite"
+    "dbSQLdir":"../../../data/sqlite",
+    "LoadDBlog":"La base de datos [$] a sido cargada con exito."
 }
