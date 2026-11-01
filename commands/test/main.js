@@ -1,7 +1,7 @@
 import {Prefix} from '../../scripts/prefixHandler/main.js';
 import { SlashCommandBuilder, ActionRowBuilder } from 'discord.js';
 import { Report, reportForm } from '../../AppLibs/Report/main.js';
-
+import { db } from '../../scripts/dataBaseLoader/main.js';
 
 const command = () => {
     const Row = new ActionRowBuilder().addComponents(Report.getButton('Prueba'));
@@ -13,7 +13,8 @@ Prefix.add(prefix =>
     .setName('test')
     .setPermission('Admin')
     .setCallback((a,b)=>{
-        b.reply(command());
+        db.messages.delete(null, true);
+        b.reply("Prueba ejecutada.");
     })
 );
 
