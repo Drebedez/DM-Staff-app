@@ -5,3 +5,7 @@ data/sqlite/*
 # Excepciones.
 !data/json/.gitkeep
 !data/sqlite/.gitkeep
+
+#Evita subir librerias.
+node_modules
+package-lock.json
