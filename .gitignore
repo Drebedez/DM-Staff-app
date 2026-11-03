@@ -9,3 +9,6 @@ data/sqlite/*
 #Evita subir librerias.
 node_modules
 package-lock.json
+
+#Evitar subir el commando/prefijo test.
+commands/test
