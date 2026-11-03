@@ -15,7 +15,8 @@ Prefix.add(prefix =>
     .setName('test')
     .setPermission('Admin')
     .setCallback((a,b)=>{
-        messageDBManager.createDefaultDB(path.join(import.meta.dirname, '../../data/sqlite/'), NaN)
+        console.log("Ejecucion:");
+        console.log(db.messages.get({ID:6})[0].setDeleteDate(Temporal.Now.plainDateTimeISO()))
         b.reply("Prueba ejecutada.");
     })
 );
