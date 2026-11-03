@@ -1,12 +1,19 @@
 {
   "name": "dm-staff-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "App de discord que permite administrar eventos de Duels and Dungeons.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js",
+    "dev": "node --watch main.js"
   },
-  "keywords": [],
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "dnd",
+    "yugioh",
+    "moderation"
+  ],
   "author": "Drebedez",
   "license": "ISC",
   "type": "module",
