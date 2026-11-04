@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "discord.js";
-import { Prefix } from "../../scripts/prefixHandler/main.js";
+import { appPrefix } from "../../scripts/prefixHandler/main.js";
 import path from 'node:path';
 import ScriptConfig from './config.json' with {type:'json'};
 import { TextFix } from "@dm-staff/textfix";
@@ -30,7 +30,7 @@ const command = (lang, number = 20, diceNum = 1 ) => {
 
 }
 
-Prefix.add(prefix => 
+appPrefix.add(prefix => 
     prefix
     .setName(ScriptConfig.prefix.name)
     .setDescription(ScriptConfig.prefix.description)

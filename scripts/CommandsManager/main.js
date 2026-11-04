@@ -1,6 +1,6 @@
 import { appClient } from '../ClientDiscordInstance/main.js';
 import { Collection, Routes, REST, Events } from 'discord.js';
-import { Prefix } from '../prefixHandler/main.js';
+import { appPrefix } from '../prefixHandler/main.js';
 import fs from 'node:fs';
 import path from "node:path";
 import APP_ID_DATA from '../../data/json/APP_ID_DATA.json' with {type: 'json'};
@@ -52,5 +52,5 @@ appClient.on(Events.InteractionCreate, async (interaction)=>{
 
 //Evento para ejecutar prefijos.
 appClient.on(Events.MessageCreate, async (message)=>{
-    Prefix.call(message);
+    appPrefix.call(message);
 });

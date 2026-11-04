@@ -1,16 +1,14 @@
-import {Prefix} from '../../scripts/prefixHandler/main.js';
+import { appPrefix } from '../../scripts/prefixHandler/main.js';
 import { SlashCommandBuilder, ActionRowBuilder } from 'discord.js';
-import { Report, reportForm } from '../../AppLibs/Report/main.js';
+import { Report } from '@dm-staff/report';
 import { db } from '../../scripts/dataBaseLoader/main.js';
-import { messageDBManager } from '../../AppLibs/messageDBManager/main.js';
-import path from 'node:path';
 
 const command = () => {
     const Row = new ActionRowBuilder().addComponents(Report.getButton('Prueba'));
     return {components:[Row]}
 }
 
-Prefix.add(prefix =>
+appPrefix.add(prefix =>
     prefix
     .setName('test')
     .setPermission('Admin')
