@@ -19,7 +19,7 @@
   "type": "module",
   "dependencies": {
     "@dm-staff/message-data-base-manager": "^1.0.3",
-    "@dm-staff/prefix": "^1.0.0",
+    "@dm-staff/prefix": "^1.0.1",
     "@dm-staff/report": "^1.0.2",
     "@dm-staff/textfix": "^1.0.0",
     "@dm-staff/textlocation": "^1.0.0",
