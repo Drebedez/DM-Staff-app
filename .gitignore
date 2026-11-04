@@ -12,3 +12,7 @@ package-lock.json
 
 #Evitar subir el commando/prefijo test.
 commands/test
+
+#Evitar subir logs y crashes.
+Console/Crash/*.txt
+Console/Log/*.txt
