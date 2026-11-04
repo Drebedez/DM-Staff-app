@@ -14,11 +14,15 @@
     "yugioh",
     "moderation"
   ],
-  "author": "Drebedez",
+  "author": "Raymond J. Aleman Delgado",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@dm-staff/message-data-base-manager": "^1.0.3",
     "better-sqlite3": "^13.0.3",
     "discord.js": "^14.27.0"
+  },
+  "allowScripts": {
+    "better-sqlite3@13.0.3": true
   }
 }
