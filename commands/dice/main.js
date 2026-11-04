@@ -1,11 +1,11 @@
 import { SlashCommandBuilder } from "discord.js";
 import { Prefix } from "../../scripts/prefixHandler/main.js";
-import { translation } from "../../AppLibs/translation/main.js";
 import path from 'node:path';
 import ScriptConfig from './config.json' with {type:'json'};
-import { textFix } from "../../AppLibs/textRep/main.js";
+import { TextFix } from "@dm-staff/textfix";
+import { TextLocation } from "@dm-staff/textlocation";
 
-const translate = new translation(path.join(import.meta.dirname, './lang'));
+const translate = new TextLocation(path.join(import.meta.dirname, './lang'));
 
 const command = (lang, number = 20, diceNum = 1 ) => {
 
@@ -19,7 +19,7 @@ const command = (lang, number = 20, diceNum = 1 ) => {
         )
     }
 
-    const response = textFix.replaceKey(
+    const response = TextFix.replaceKey(
         translate.get(ScriptConfig.TextsLocationsID.RESULT, lang),
         [
             throwList.map(result=>`[**${result}**]`).join(', ')

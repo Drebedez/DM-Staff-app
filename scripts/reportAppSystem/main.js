@@ -1,5 +1,5 @@
-import { Report, reportForm } from "../../AppLibs/Report/main.js";
+import {Report, ReportForm} from "@dm-staff/report";
 import { appClient } from "../ClientDiscordInstance/main.js";
 
-reportForm.addReportOption();
+ReportForm.addReportOption();
 Report.setClient(appClient);

@@ -1,6 +1,6 @@
-import { PrefixManager } from "../../AppLibs/Prefix/main.js";
+import { Prefix } from '@dm-staff/prefix';
 import ScriptConfig from './config.json' with {type:'json'};
 
-const Prefix = new PrefixManager(ScriptConfig.PrefixKey);
+const appPrefix = new Prefix(ScriptConfig.PrefixKey);
 
 export {Prefix};

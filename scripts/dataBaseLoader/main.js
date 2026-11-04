@@ -1,12 +1,12 @@
 import path from 'node:path';
 import ScriptConfig from './config.json' with {type:'json'};
-import { msgManager } from '../../AppLibs/messageDBManager/main.js';
-import {appClient} from '../ClientDiscordInstance/main.js';
+import { appClient } from '../ClientDiscordInstance/main.js';
+import { MessageDataBaseManager } from '@dm-staff/message-data-base-manager';
 
 const dbDir = path.join(import.meta.filename, ScriptConfig.dbSQLdir);
 
 const db = {
-    messages: new msgManager(path.join(dbDir, 'messages.db')).setAppClient(appClient)
+    messages: new MessageDataBaseManager(path.join(dbDir, 'messages.db')).setAppClient(appClient)
 }
 
 export {db}
