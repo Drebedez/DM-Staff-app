@@ -15,4 +15,4 @@ commands/test
 
 #Evitar subir logs y crashes.
 Console/Crash/*.txt
-Console/Log/*.txt
+Console/Logs/*.txt
