@@ -13,10 +13,7 @@ appPrefix.add(prefix =>
     .setName('test')
     .setPermission('Admin')
     .setCallback((a,b)=>{
-        console.log("Ejecucion:");
-
-        db.messages.get({id:1})[0].fetchMessage().then(x=>console.log(x));
-
+        
         b.reply("Prueba ejecutada.");
     })
 );

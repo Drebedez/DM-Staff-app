@@ -1,10 +1,7 @@
 #Evitar subir base de datos json.
-data/json/*
+data/json/*.json
 #Evitar subir base de datos sqlite.
-data/sqlite/*
-# Excepciones.
-!data/json/.gitkeep
-!data/sqlite/.gitkeep
+data/sqlite/*.db
 
 #Evita subir librerias.
 node_modules
