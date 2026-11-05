@@ -10,8 +10,10 @@ data/sqlite/*
 node_modules
 package-lock.json
 
-#Evitar subir el commando/prefijo test.
-commands/test
+#Evitar subir entorno de pruebas.
+commands/test/
+libTest/
+scripts/test/
 
 #Evitar subir logs y crashes.
 Console/Crash/*.txt
