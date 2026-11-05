@@ -1,0 +1,13 @@
+{
+    "mainFile": "../../Console",
+    "logType":{
+        "crash":{
+            "name":"Crash",
+            "message":"\n[$] - $\n$"
+        },
+        "asyncCrash":{
+            "name":"Crash",
+            "message":"\n[$] - $\n Razon: $"
+        }
+    }
+}
