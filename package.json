@@ -24,6 +24,6 @@
     "@dm-staff/textfix": "^1.0.0",
     "@dm-staff/textlocation": "^1.0.0",
     "better-sqlite3": "^13.0.3",
-    "discord.js": "^14.27.0"
+    "discord.js": "^14.28.1"
   }
 }

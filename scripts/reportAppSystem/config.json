@@ -1,16 +1,24 @@
 {
     "reportFormOptions":[
         {
-            "label":"",
-            "value":""
+            "label":"Command/Prefix Functions.",
+            "value":"command-prefix",
+            "description":"Problems with prefix functions and/or commands."
         },
         {
-            "label":"",
-            "value":""
+            "label":"Grammatical error.",
+            "value":"grammaticalerror ",
+            "description":"Spelling and/or localization error (translation)."
         },
         {
-            "label":"",
-            "value":""
+            "label":"Clarify a question.",
+            "value":"q&a",
+            "description":"If you have a question about our app or Duels n' Dungeons, we can answer it."
+        },
+        {
+            "label":"Other.",
+            "value":"other",
+            "description":"A type of report that does not fall into any category."
         }
     ]
 }

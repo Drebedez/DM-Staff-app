@@ -1,10 +1,8 @@
 import {Report, ReportForm} from "../../libTest/Report/index.js";
 import { appClient } from "../ClientDiscordInstance/main.js";
+import ScriptConfig from './config.json' with { type:'json' };
 
-ReportForm.addReportOption({
-    label:"Prueba",
-    value:"sds"
-});
+ReportForm.addReportOption(...ScriptConfig.reportFormOptions);
 Report.setClient(appClient);
 
 Report.addFormReportHandler( async (form)=>{
