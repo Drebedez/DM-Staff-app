@@ -1,0 +1,11 @@
+{
+    "prefix":{
+        "name":"report",
+        "description":"Fill out a report form.",
+        "permission":"Admin"
+    },
+    "command":{
+        "name":"report",
+        "description":"Fill out a report form."
+    }
+}
