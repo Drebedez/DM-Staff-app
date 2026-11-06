@@ -13,5 +13,5 @@ libTest/*
 scripts/test/*
 
 #Evitar subir logs y crashes.
-Console/Crash/*.txt
-Console/Logs/*.txt
+Console/Crash/*.log
+Console/Logs/*.log
