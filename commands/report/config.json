@@ -2,7 +2,7 @@
     "prefix":{
         "name":"report",
         "description":"Fill out a report form.",
-        "permission":"Admin"
+        "permission":"User"
     },
     "command":{
         "name":"report",

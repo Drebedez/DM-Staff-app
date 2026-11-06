@@ -5,8 +5,7 @@ import ScriptConfig from './config.json' with { type:'json' };
 const slashCommand = {
     data: new SlashCommandBuilder()
     .setName(ScriptConfig.command.name)
-    .setDescription(ScriptConfig.command.description)
-    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
+    .setDescription(ScriptConfig.command.description),
 
     execute: async (/**@type {import('discord.js').ChatInputCommandInteraction} */interaction)=>{
         interaction.showModal(ReportForm.getDiscordReportForm());
