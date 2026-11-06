@@ -4,13 +4,13 @@ data/json/*.json
 data/sqlite/*.db
 
 #Evita subir librerias.
-node_modules
+node_modules/*
 package-lock.json
 
 #Evitar subir entorno de pruebas.
-commands/test/
-libTest/
-scripts/test/
+commands/test/*
+libTest/*
+scripts/test/*
 
 #Evitar subir logs y crashes.
 Console/Crash/*.txt
