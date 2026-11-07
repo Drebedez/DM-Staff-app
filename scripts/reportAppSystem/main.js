@@ -21,7 +21,7 @@ Report.addFormReportHandler( async (form)=>{
             form.date.toString().replace('T', ' ').split('.')[0]
         ]).id;
 
-    form.reportForm.files.forEach( async file => {
+    form.reportForm.files?.forEach( async file => {
 
             const fetchImage = await fetch(file.proxyURL);
 
